@@ -1,0 +1,94 @@
+/*
+    Aplicação: Calculadora de IMC
+    Autor: Marcos Willian de Souza
+    Data: 06/09/2020
+*/ 
+
+@font-face{
+    font-family:  PTSans-Regular; 
+    src: url('../font/PT_Sans/PTSans-Regular.ttf');
+}
+@font-face{
+    font-family:  PTSans-Bold; 
+    src: url('../font/PT_Sans/PTSans-Bold.ttf');
+}
+@font-face{
+    font-family:  PTSans-BoldItalic; 
+    src: url('../font/PT_Sans/PTSans-BoldItalic.ttf');
+}
+@font-face{
+    font-family:  PTSans-Italic; 
+    src: url('../font/PT_Sans/PTSans-Italic.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'PTSans-Italic', sans-serif;
+   
+}
+h1{
+    font-family: 'PTSans-BoldItalic', sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+fieldset{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+button{
+    width: 120px;
+    height: 40px;
+}
+input{
+    height: 30px;
+}
+label,
+input{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+label,
+input,
+button{
+    margin-top: 10px;
+}
+input, button{
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+#container{
+    /* width: 800px; */
+    border: 1px solid green; /******** REMOVER ****************/
+
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left:-420px;
+	margin-top:-370px; 
+	height: 592px;
+	width: 840px; 
+	background-color: rgba(0,0,0,0.1);
+
+}
+#campos{
+    border: 1px solid red; /******** REMOVER ****************/
+    display: flex; 
+    justify-items: right;
+    flex-direction: column;
+    /* align-items: right; */
+    /* justify-content: center; */
+}
+#botoes{
+    margin-left: 20px;
+    border: 1px solid blue; /******** REMOVER ****************/
+    height: 60px;
+}
+#tabela{
+    border: 1px solid purple; /******** REMOVER ****************/
+    margin-left: 20px;
+    margin-top: 20px;
+}

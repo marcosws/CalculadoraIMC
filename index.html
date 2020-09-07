@@ -1,11 +1,95 @@
+<!-- 
+    Aplicação: Calculadora de IMC
+    Autor: Marcos Willian de Souza
+    Data: 06/09/2020
+-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculo IMC</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+        <link rel="stylesheet" href="./font/font-awesome-5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/style-imc-css.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <h1>Calculadora de IMC</h1>
+            <form>
+                <fieldset>
+                    <legend>Calculadora IMC</legend>
+                    <div id="campos">
+                        <label for="nome" class="form-imc">Nome:</label>
+                        <input type="text" id="nome" class="form-imc">
+                        <label for="peso" class="form-imc">Peso:</label>
+                        <input type="number" id="peso" class="form-imc">
+                        <label for="altura" class="form-imc">Altura:</label>
+                        <input type="number" id="altura" class="form-imc">
+                    </div>
+                    <div id="botoes">
+                        <button type="button" onclick="" id="btn-calcular" class="form-imc">Calcular <i class="fas fa-running"></i></button>
+                        <button type="button" onclick="" id="btn-limpar" class="form-imc">Limpar <i class="fas fa-broom"></i></button>
+                        <button type="button" onclick="" id="btn-sobre" class="form-imc">Sobre <i class="fas fa-question-circle"></i></button>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Resultado</legend>
+                    <div id="tabela">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Peso</th>
+                                    <th>Altura</th>
+                                    <th>IMC</th>
+                                    <th>Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>??</td>
+                                    <td>??</td>
+                                    <td>??</td>
+                                    <td>??</td>
+                                    <td>??</td>
+                                </tr>
+                                <tr>
+                                    <td>??</td>
+                                    <td>??</td>
+                                    <td>??</td>
+                                    <td>??</td>
+                                    <td>??</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
 </html>
+
+<!-- 
+
+Regra:
+
+                  Peso  
+  IMC =       ___________
+            Altura x Altura
+
+    Imc = peso / (altura * altura)
+
+
+IMC 	            | Resultado
+============================================
+Menos do que 18,5 	| Abaixo do peso
+Entre 18,5 e 24,9 	| Peso normal
+Entre 25 e 29,9 	| Sobrepeso
+Entre 30 e 34,9 	| Obesidade grau 1
+Entre 35 e 39,9 	| Obesidade grau 2
+Mais do que 40 	    | Obesidade grau 3 
+
+Referências: https://www.minhavida.com.br/alimentacao/tudo-sobre/32159-imc
+-->
