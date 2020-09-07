@@ -12,7 +12,7 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
         <link rel="stylesheet" href="./font/font-awesome-5.14.0/css/all.min.css">
         <link rel="stylesheet" href="./css/style-imc-css.css">
-        
+        <script src="./js/script-imc-js.js"></script> 
     </head>
     <body>
         <div id="container">
@@ -29,12 +29,12 @@
                         <input type="number" id="altura" class="form-imc">
                     </div>
                     <div id="botoes">
-                        <button type="button" onclick="" id="btn-calcular" class="form-imc">Calcular <i class="fas fa-running"></i></button>
-                        <button type="button" onclick="" id="btn-limpar" class="form-imc">Limpar <i class="fas fa-broom"></i></button>
-                        <button type="button" onclick="" id="btn-sobre" class="form-imc">Sobre <i class="fas fa-question-circle"></i></button>
+                        <button type="button" onclick="calcularImc();" id="btn-calcular" class="form-imc">Calcular <i class="fas fa-running"></i></button>
+                        <button type="button" onclick="limparCampos();" id="btn-limpar" class="form-imc">Limpar <i class="fas fa-broom"></i></button>
+                        <button type="button" onclick="sobreCalculadoraImc();" id="btn-sobre" class="form-imc">Sobre <i class="fas fa-question-circle"></i></button>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset id="fieldset-tab">
                     <legend>Resultado</legend>
                     <div id="tabela">
                         <table>
@@ -47,21 +47,7 @@
                                     <th>Situação</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>??</td>
-                                    <td>??</td>
-                                    <td>??</td>
-                                    <td>??</td>
-                                    <td>??</td>
-                                </tr>
-                                <tr>
-                                    <td>??</td>
-                                    <td>??</td>
-                                    <td>??</td>
-                                    <td>??</td>
-                                    <td>??</td>
-                                </tr>
+                            <tbody id="dados">
                             </tbody>
                         </table>
                     </div>

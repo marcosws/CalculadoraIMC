@@ -27,7 +27,9 @@
 }
 html{
     font-family: 'PTSans-Italic', sans-serif;
-   
+    color: rgb(255, 62, 3);
+    /* background-color: rgba(255, 62, 3, 0.3); */
+    background-color:white;
 }
 h1{
     font-family: 'PTSans-BoldItalic', sans-serif;
@@ -35,15 +37,21 @@ h1{
     margin-top: 10px;
 }
 fieldset{
+    border: 1px solid rgb(255, 62, 3);
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 5px;
 }
 button{
+    font-family: 'PTSans-Bold', sans-serif;
     width: 120px;
     height: 40px;
+    background-color: rgb(255, 62, 3);
+    color: white;
 }
 input{
     height: 30px;
+    color: rgb(255, 62, 3);
 }
 label,
 input{
@@ -56,14 +64,13 @@ button{
     margin-top: 10px;
 }
 input, button{
-    border: 1px solid grey;
+    border: 1px solid rgb(255, 62, 3);
     border-radius: 5px;
-
 }
 #container{
     /* width: 800px; */
-    border: 1px solid green; /******** REMOVER ****************/
-
+    border: 1px solid rgb(255, 62, 3);
+    border-radius: 5px;
     position: absolute;
 	left: 50%;
 	top: 50%;
@@ -71,11 +78,10 @@ input, button{
 	margin-top:-370px; 
 	height: 592px;
 	width: 840px; 
-	background-color: rgba(0,0,0,0.1);
+	background-color: lightgrey;
 
 }
 #campos{
-    border: 1px solid red; /******** REMOVER ****************/
     display: flex; 
     justify-items: right;
     flex-direction: column;
@@ -84,11 +90,29 @@ input, button{
 }
 #botoes{
     margin-left: 20px;
-    border: 1px solid blue; /******** REMOVER ****************/
     height: 60px;
 }
 #tabela{
-    border: 1px solid purple; /******** REMOVER ****************/
     margin-left: 20px;
     margin-top: 20px;
+    margin-right: 20px;
+    height: 170px;
+    overflow-y: scroll;
+}
+#fieldset-tab{
+    height: 230px;
+}
+table{
+    font-family: 'PTSans-Regular', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 2px solid  rgb(255, 62, 3);;
+    text-align: left;
+    padding: 4px;
+}
+tr:nth-child(even){
+    background-color: rgb(255, 62, 3);
+    color: white;
 }
