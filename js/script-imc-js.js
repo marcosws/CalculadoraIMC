@@ -80,3 +80,13 @@ function imprimeSituacao(imc){
     }
 
 }
+function sair(){
+
+    if(confirm("Deseja sair da Calculadora?")){
+        window.close();
+    }
+
+}
+function limparTabela(){
+    document.getElementById('dados').innerHTML = "";
+}

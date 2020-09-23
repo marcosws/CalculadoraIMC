@@ -42,21 +42,27 @@ fieldset{
     margin-right: 20px;
     border-radius: 5px;
 }
+legend{
+    margin-left: 10px;
+}
 button{
     font-family: 'PTSans-Bold', sans-serif;
-    width: 120px;
+    width: 148px;
     height: 40px;
     background-color: rgb(255, 62, 3);
     color: white;
 }
 input{
-    height: 30px;
+    height: 36px;
     color: rgb(255, 62, 3);
 }
 label,
 input{
     margin-left: 20px;
     margin-right: 20px;
+}
+input{
+    padding-left: 5px;
 }
 label,
 input,
@@ -76,10 +82,9 @@ input, button{
 	top: 50%;
 	margin-left:-420px;
 	margin-top:-370px; 
-	height: 592px;
+	height: 616px;
 	width: 840px; 
 	background-color: lightgrey;
-
 }
 #campos{
     display: flex; 
@@ -91,6 +96,10 @@ input, button{
 #botoes{
     margin-left: 20px;
     height: 60px;
+}
+#nome, #peso, #altura{
+   font-size: 18px;
+   font-family: 'PTSans-Bold', sans-serif;
 }
 #tabela{
     margin-left: 20px;

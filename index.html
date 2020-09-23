@@ -22,16 +22,18 @@
                     <legend>Calculadora IMC</legend>
                     <div id="campos">
                         <label for="nome" class="form-imc">Nome:</label>
-                        <input type="text" id="nome" class="form-imc">
+                        <input type="text" id="nome" class="form-imc" autocomplete="off" placeholder="Digite o nome, Ex: João Ferreira de Almeida">
                         <label for="peso" class="form-imc">Peso:</label>
-                        <input type="number" id="peso" class="form-imc">
+                        <input type="number" id="peso" class="form-imc" placeholder="Digite o peso, Ex: 72 (Kg)">
                         <label for="altura" class="form-imc">Altura:</label>
-                        <input type="number" id="altura" class="form-imc">
+                        <input type="number" id="altura" class="form-imc" placeholder="Digite a altura, Ex: 1.77 (m)">
                     </div>
                     <div id="botoes">
-                        <button type="button" onclick="calcularImc();" id="btn-calcular" class="form-imc">Calcular <i class="fas fa-running"></i></button>
-                        <button type="button" onclick="limparCampos();" id="btn-limpar" class="form-imc">Limpar <i class="fas fa-broom"></i></button>
+                        <button type="button" onclick="calcularImc();" id="btn-calcular" class="form-imc">Calcular <i class="fas fa-running"></i> </button>
+                        <button type="button" onclick="limparCampos();" id="btn-novo-calculo" class="form-imc">Novo Calculo <i class="fas fa-file"></i></button>
+                        <button type="button" onclick="limparTabela();" id="btn-limpar-tabela" class="form-imc">Limpar Tabela <i class="fas fa-broom"></i></button>
                         <button type="button" onclick="sobreCalculadoraImc();" id="btn-sobre" class="form-imc">Sobre <i class="fas fa-question-circle"></i></button>
+                        <button type="button" onclick="sair();" id="btn-sair" class="form-imc">Sair <i class="fas fa-sign-out-alt"></i></i></button>
                     </div>
                 </fieldset>
                 <fieldset id="fieldset-tab">
