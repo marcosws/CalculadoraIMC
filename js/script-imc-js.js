@@ -13,21 +13,34 @@ function calcularImc(){
     let peso = parseFloat(document.getElementById('peso').value);
     let altura = parseFloat(document.getElementById('altura').value);
 
-    let imc = calcImc(peso, altura);
-    let situacao = imprimeSituacao(imc);
+    if(nome === ""){
+        alert("Nome deve ser preenchido!");
+    }
+    else if(isNaN(peso)){
+        alert("Informe o peso!")
+    }
+    else if(isNaN(altura)){
+        alert("Informe a altura!");
+    }
+    else{
 
-    cadastro.nome = nome;
-    cadastro.peso = peso;
-    cadastro.altura = altura;
-    cadastro.imc = imc;
-    cadastro.situacao = situacao;
+        let imc = calcImc(peso, altura);
+        let situacao = imprimeSituacao(imc);
 
-    console.log(cadastro);
-    console.log(dados);
+        cadastro.nome = nome;
+        cadastro.peso = peso;
+        cadastro.altura = altura;
+        cadastro.imc = imc;
+        cadastro.situacao = situacao;
 
-    dados.push(cadastro);
-    preencheTabela(dados);
-    cadastro = undefined;
+        console.log(cadastro);
+        console.log(dados);
+
+        dados.push(cadastro);
+        preencheTabela(dados);
+        cadastro = undefined;
+
+    }
 
 }
 function preencheTabela(dados){
